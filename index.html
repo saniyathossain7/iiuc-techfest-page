@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IIUC TechFest 2026</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="m-0 scroll-smooth bg-slate-950 font-[Arial, sans-serif] text-slate-300">
+    <header id="site-header" class="sticky top-0 z-50 border-b border-slate-800 bg-slate-950/95">
+        <div class="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
+            <a href="#home" id="site-logo" class="text-xl font-bold text-white">IIUC TechFest 2026</a>
+            <nav id="desktop-nav" class="hidden gap-8 md:flex" aria-label="Main navigation">
+                <a href="#home" class="text-slate-300 hover:text-cyan-400">Home</a>
+                <a href="#about" class="text-slate-300 hover:text-cyan-400">About</a>
+                <a href="#schedule" class="text-slate-300 hover:text-cyan-400">Schedule</a>
+                <a href="#events" class="text-slate-300 hover:text-cyan-400">Events</a>
+                <a href="#register" class="text-slate-300 hover:text-cyan-400">Register</a>
+            </nav>
+            <button id="menu-button" type="button" aria-label="Open menu" aria-expanded="false" class="cursor-pointer rounded-lg border border-slate-700 px-3 py-2 text-white hover:border-cyan-400 hover:text-cyan-400 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-cyan-400 md:hidden">Menu</button>
+        </div>
+        <nav id="mobile-menu" class="hidden flex-col border-t border-slate-800 px-6 py-3 md:hidden" aria-label="Mobile navigation">
+            <a href="#home" class="mobile-link block py-3 text-slate-300 hover:text-cyan-400">Home</a>
+            <a href="#about" class="mobile-link block py-3 text-slate-300 hover:text-cyan-400">About</a>
+            <a href="#schedule" class="mobile-link block py-3 text-slate-300 hover:text-cyan-400">Schedule</a>
+            <a href="#events" class="mobile-link block py-3 text-slate-300 hover:text-cyan-400">Events</a>
+            <a href="#register" class="mobile-link block py-3 text-slate-300 hover:text-cyan-400">Register</a>
+        </nav>
+    </header>
+    <main>
+        <section id="home" class="bg-slate-900 bg-cover bg-center px-6 py-24 text-center md:py-36" style="background-image: linear-gradient(rgba(2, 6, 23, 0.78), rgba(2, 6, 23, 0.9)), url('images/hero.jpg'), linear-gradient(135deg, #0f172a, #164e63);">
+            <div class="mx-auto max-w-3xl">
+                <h1 class="mb-5 text-4xl font-bold text-white md:text-6xl">IIUC TechFest 2026</h1>
+                <p class="mx-auto mb-3 max-w-xl text-lg leading-relaxed text-slate-300">Two days of coding, design and ideas, built by CSE students for everyone on campus.</p>
+                <p class="mb-9 text-slate-400">12 - 13 December 2026, IIUC Campus, Chattogram</p>
+                <a href="#register" id="hero-register-button" class="inline-block rounded-lg bg-cyan-500 px-8 py-3 font-bold text-slate-950 hover:bg-cyan-400 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">Register now</a>
+            </div>
+        </section>
+        <section id="about" class="mx-auto max-w-6xl px-6 py-20">
+            <h2 class="mb-6 text-3xl font-bold text-white">About the fest</h2>
+            <p class="mb-10 max-w-2xl leading-relaxed">IIUC TechFest brings students together to compete, learn and build. Join a team, solve problems under a timer, or just come to watch and meet other people who like technology. Everyone is welcome, from first year to final year.</p>
+            <div id="stats-grid" class="grid grid-cols-1 gap-5 sm:grid-cols-3">
+                <article class="rounded-xl border border-slate-800 bg-slate-900 p-6 text-center">
+                    <strong class="block text-4xl text-cyan-400">500+</strong>
+                    <span class="mt-2 block text-sm text-slate-400">Participants</span>
+                </article>
+                <article class="rounded-xl border border-slate-800 bg-slate-900 p-6 text-center">
+                    <strong class="block text-4xl text-cyan-400">4</strong>
+                    <span class="mt-2 block text-sm text-slate-400">Competitions</span>
+                </article>
+                <article class="rounded-xl border border-slate-800 bg-slate-900 p-6 text-center">
+                    <strong class="block text-4xl text-cyan-400">2</strong>
+                    <span class="mt-2 block text-sm text-slate-400">Days</span>
+                </article>
+            </div>
+        </section>
+        <section id="schedule" class="border-y border-slate-800 bg-slate-900/60">
+            <div class="mx-auto max-w-6xl px-6 py-20">
+                <h2 class="mb-8 text-3xl font-bold text-white">Schedule</h2>
+                <div class="overflow-x-auto rounded-xl border border-slate-800">
+                    <table class="w-full min-w-[480px] border-collapse text-left">
+                        <caption class="sr-only">Two day schedule of IIUC TechFest 2026</caption>
+                        <thead>
+                            <tr class="bg-slate-800 text-white">
+                                <th class="px-5 py-3">Day</th>
+                                <th class="px-5 py-3">Time</th>
+                                <th class="px-5 py-3">Event</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="border-t border-slate-800 hover:bg-slate-800/60">
+                                <td class="px-5 py-3">Day 1</td>
+                                <td class="px-5 py-3">9:00 AM</td>
+                                <td class="px-5 py-3">Opening ceremony</td>
+                            </tr>
+                            <tr class="border-t border-slate-800 hover:bg-slate-800/60">
+                                <td class="px-5 py-3">Day 1</td>
+                                <td class="px-5 py-3">10:30 AM</td>
+                                <td class="px-5 py-3">Hackathon starts</td>
+                            </tr>
+                            <tr class="border-t border-slate-800 hover:bg-slate-800/60">
+                                <td class="px-5 py-3">Day 1</td>
+                                <td class="px-5 py-3">2:00 PM</td>
+                                <td class="px-5 py-3">Competitive Programming contest</td>
+                            </tr>
+                            <tr class="border-t border-slate-800 hover:bg-slate-800/60">
+                                <td class="px-5 py-3">Day 2</td>
+                                <td class="px-5 py-3">9:30 AM</td>
+                                <td class="px-5 py-3">Web Design challenge</td>
+                            </tr>
+                            <tr class="border-t border-slate-800 hover:bg-slate-800/60">
+                                <td class="px-5 py-3">Day 2</td>
+                                <td class="px-5 py-3">1:00 PM</td>
+                                <td class="px-5 py-3">Tech Quiz</td>
+                            </tr>
+                            <tr class="border-t border-slate-800 hover:bg-slate-800/60">
+                                <td class="px-5 py-3">Day 2</td>
+                                <td class="px-5 py-3">4:00 PM</td>
+                                <td class="px-5 py-3">Prize giving and closing</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+        <section id="events" class="mx-auto max-w-6xl px-6 py-20">
+            <h2 class="mb-8 text-3xl font-bold text-white">Events</h2>
+            <div id="event-grid" class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
+                <article id="event-hackathon" class="flex flex-col rounded-xl border border-slate-800 bg-slate-900 p-6 transition-transform duration-200 hover:-translate-y-1 hover:border-cyan-400">
+                    <h3 class="mb-2 text-xl font-bold text-white">Hackathon</h3>
+                    <p class="mb-5 grow text-sm leading-relaxed text-slate-400">Teams of three build a working project in one day.</p>
+                    <a href="#register" class="rounded-lg bg-slate-800 px-4 py-2 text-center text-sm text-white hover:bg-cyan-500 hover:text-slate-950">Join this event</a>
+                </article>
+                <article id="event-cp" class="flex flex-col rounded-xl border border-slate-800 bg-slate-900 p-6 transition-transform duration-200 hover:-translate-y-1 hover:border-cyan-400">
+                    <h3 class="mb-2 text-xl font-bold text-white">Competitive Programming</h3>
+                    <p class="mb-5 grow text-sm leading-relaxed text-slate-400">Solve algorithm problems against the clock. C, C++, Java and Python allowed.</p>
+                    <a href="#register" class="rounded-lg bg-slate-800 px-4 py-2 text-center text-sm text-white hover:bg-cyan-500 hover:text-slate-950">Join this event</a>
+                </article>
+                <article id="event-web-design" class="flex flex-col rounded-xl border border-slate-800 bg-slate-900 p-6 transition-transform duration-200 hover:-translate-y-1 hover:border-cyan-400">
+                    <h3 class="mb-2 text-xl font-bold text-white">Web Design</h3>
+                    <p class="mb-5 grow text-sm leading-relaxed text-slate-400">Build a responsive landing page from a given theme using HTML and CSS.</p>
+                    <a href="#register" class="rounded-lg bg-slate-800 px-4 py-2 text-center text-sm text-white hover:bg-cyan-500 hover:text-slate-950">Join this event</a>
+                </article>
+                <article id="event-quiz" class="flex flex-col rounded-xl border border-slate-800 bg-slate-900 p-6 transition-transform duration-200 hover:-translate-y-1 hover:border-cyan-400">
+                    <h3 class="mb-2 text-xl font-bold text-white">Tech Quiz</h3>
+                    <p class="mb-5 grow text-sm leading-relaxed text-slate-400">Questions on computers, the internet and the history of technology.</p>
+                    <a href="#register" class="rounded-lg bg-slate-800 px-4 py-2 text-center text-sm text-white hover:bg-cyan-500 hover:text-slate-950">Join this event</a>
+                </article>
+            </div>
+        </section>
+        <section id="register" class="border-t border-slate-800 bg-slate-900/60">
+            <div class="mx-auto max-w-xl px-6 py-20">
+                <h2 class="mb-2 text-3xl font-bold text-white">Register</h2>
+                <p class="mb-8 text-slate-400">Pick an event and send your details. It takes less than a minute.</p>
+                <form id="register-form" class="flex flex-col gap-4">
+                    <label for="full-name" class="font-bold text-white">Full name</label>
+                    <input id="full-name" name="full-name" type="text" required class="rounded-lg border border-slate-700 bg-slate-950 p-3 text-white focus-visible:outline-2 focus-visible:outline-cyan-400">
+                    <label for="email" class="font-bold text-white">Email</label>
+                    <input id="email" name="email" type="email" required class="rounded-lg border border-slate-700 bg-slate-950 p-3 text-white focus-visible:outline-2 focus-visible:outline-cyan-400">
+                    <label for="event-choice" class="font-bold text-white">Event</label>
+                    <select id="event-choice" name="event-choice" required class="rounded-lg border border-slate-700 bg-slate-950 p-3 text-white focus-visible:outline-2 focus-visible:outline-cyan-400">
+                        <option value="">Choose an event</option>
+                        <option value="Hackathon">Hackathon</option>
+                        <option value="Competitive Programming">Competitive Programming</option>
+                        <option value="Web Design">Web Design</option>
+                        <option value="Tech Quiz">Tech Quiz</option>
+                    </select>
+                    <button type="submit" id="register-button" class="mt-2 cursor-pointer rounded-lg bg-cyan-500 px-6 py-3 font-bold text-slate-950 hover:bg-cyan-400 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">Register</button>
+                </form>
+                <p id="form-message" class="mt-5 hidden rounded-lg border border-cyan-400 bg-cyan-950 p-4 text-cyan-300" role="status"></p>
+            </div>
+        </section>
+    </main>
+     <footer id="site-footer" class="border-t border-slate-800 bg-slate-950">
+        <div class="mx-auto flex max-w-6xl flex-col items-center justify-between gap-4 px-6 py-8 text-sm md:flex-row">
+            <p class="m-0 text-slate-400">&copy; 2026 IIUC TechFest. All rights reserved.</p>
+            <nav class="flex gap-6" aria-label="Footer navigation">
+                <a href="#about" class="text-slate-300 hover:text-cyan-400">About</a>
+                <a href="#events" class="text-slate-300 hover:text-cyan-400">Events</a>
+                <a href="#home" class="text-slate-300 hover:text-cyan-400">Back to top</a>
+            </nav>
+        </div>
+    </footer>
+    <script>
+        const menuButton=document.getElementById("menu-button");
+        const mobileMenu=document.getElementById("mobile-menu");
+        const mobileLinks=document.querySelectorAll(".mobile-link");
+        menuButton.addEventListener("click", function () {
+            mobileMenu.classList.toggle("hidden");
+            mobileMenu.classList.toggle("flex");
+            const isOpen = !mobileMenu.classList.contains("hidden");
+            menuButton.setAttribute("aria-expanded", isOpen);
+            menuButton.textContent = isOpen ? "Close" : "Menu";
+        });
+        mobileLinks.forEach(function (link) {
+            link.addEventListener("click", function () {
+                mobileMenu.classList.add("hidden");
+                mobileMenu.classList.remove("flex");
+                menuButton.setAttribute("aria-expanded", false);
+                menuButton.textContent = "Menu";
+            });
+        });
+        const registerForm=document.getElementById("register-form");
+        const formMessage=document.getElementById("form-message");
+        registerForm.addEventListener("submit", function (event) {
+            event.preventDefault();
+            const name=document.getElementById("full-name").value;
+            const eventChoice=document.getElementById("event-choice").value;
+            formMessage.textContent=`Thanks, ${name}! You are registered for ${eventChoice}.`;
+            formMessage.classList.remove("hidden");
+            registerForm.reset();
+        });
+    </script>
+</body>
+</html>
